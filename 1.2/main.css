@@ -1,4 +1,5 @@
 /*样式初始化 from taobao 略有修改*/
+
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, li, pre, form, fieldset, legend, button, input, textarea, th, td {
   margin: 0;
   padding: 0;
@@ -45,11 +46,12 @@ table {
 }
 
 /*我的样式*/
-body{
+
+body {
   background-color: #DDDEDF;
 }
-.font-grey{
-  color:#aaaaaa;
+.font-grey {
+  color: #aaaaaa;
 }
 .top-header {
   height: 60px;
@@ -58,7 +60,7 @@ body{
   display: table;
   vertical-align: middle;
 }
-.top-header span{
+.top-header span {
   display: table-cell;
   vertical-align: middle;
 }
@@ -103,7 +105,7 @@ article:first-child {
 .indent {
   text-indent: 2em;
 }
-.imglist{
+.imglist {
   margin-left: 40px;
 }
 .imglist li {
@@ -118,51 +120,51 @@ article:first-child {
 .imglist img {
   height: 160px;
 }
-figure{
+figure {
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
 }
-.table1{
+.table1 {
   width: 100%;
   border-color: #aaaaaa;
 }
-.table1 th,td{
+.table1 th, td {
   padding: 3px;
 }
-.table1 thead{
+.table1 thead {
   background-color: #323334;
   color: white;
 }
-.table1 tbody tr:last-child{
+.table1 tbody tr:last-child {
   background-color: #aaaaaa;
 }
-.form-table{
+.form-table {
   width: 100%;
   margin-top: 20px;
 }
-.form-table tr{
-  height:40px;
+.form-table tr {
+  height: 40px;
 }
-.form-table tr td:first-child{
+.form-table tr td:first-child {
   text-align: right;
   padding-right: 8px;
   width: 40%;
 }
-.form-table input{
+.form-table input {
   padding: 4px;
 }
-.text-top{
+.text-top {
   vertical-align: top;
 }
-.sure-submit{
+.sure-submit {
   width: 100%;
   border-radius: 5px;
   height: 40px;
-  background-color:#3253CD;
+  background-color: #3253CD;
   border: none;
   color: white;
 }
-footer{
+footer {
   height: 70px;
   background-color: black;
   color: white;
