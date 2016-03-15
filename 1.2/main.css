@@ -1,0 +1,171 @@
+/*样式初始化 from taobao 略有修改*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+body, button, input, select, textarea {
+  font: 12px/1.5tahoma, arial, \5b8b\4f53;
+}
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+code, kbd, pre, samp {
+  font-family: couriernew, courier, monospace;
+}
+small {
+  font-size: 12px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+legend {
+  color: #000;
+}
+fieldset, img {
+  border: 0;
+}
+button, input, select, textarea {
+  font-size: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*我的样式*/
+body{
+  background-color: #DDDEDF;
+}
+.font-grey{
+  color:#aaaaaa;
+}
+.top-header {
+  height: 60px;
+  width: 100%;
+  background-color: #323334;
+  display: table;
+  vertical-align: middle;
+}
+.top-header span{
+  display: table-cell;
+  vertical-align: middle;
+}
+.top-header nav li {
+  float: left;
+}
+.top-header nav {
+  float: right;
+  height: 60px;
+}
+.top-header nav a {
+  text-decoration: none;
+  font-size: 13px;
+  display: inline-block;
+  width: 85px;
+}
+.top-header nav a:link {
+  color: white;
+}
+.top-header nav a:visited {
+  color: #8798A0;
+}
+.top-header nav li {
+  height: 60px;
+  line-height: 60px;
+}
+.top-header img {
+  margin-left: 40px;
+}
+article, aside {
+  background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  box-shadow: 2px 2px 3px #aaaaaa;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+article:first-child {
+  margin-top: 20px;
+}
+.indent {
+  text-indent: 2em;
+}
+.imglist{
+  margin-left: 40px;
+}
+.imglist li {
+  height: 200px;
+  width: 160px;
+  border: 1px solid #aaaaaa;
+  list-style: none;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.imglist img {
+  height: 160px;
+}
+figure{
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+.table1{
+  width: 100%;
+  border-color: #aaaaaa;
+}
+.table1 th,td{
+  padding: 3px;
+}
+.table1 thead{
+  background-color: #323334;
+  color: white;
+}
+.table1 tbody tr:last-child{
+  background-color: #aaaaaa;
+}
+.form-table{
+  width: 100%;
+  margin-top: 20px;
+}
+.form-table tr{
+  height:40px;
+}
+.form-table tr td:first-child{
+  text-align: right;
+  padding-right: 8px;
+  width: 40%;
+}
+.form-table input{
+  padding: 4px;
+}
+.text-top{
+  vertical-align: top;
+}
+.sure-submit{
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
+  background-color:#3253CD;
+  border: none;
+  color: white;
+}
+footer{
+  height: 70px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+}
