@@ -53,7 +53,7 @@ table {
   padding: 20px;
   border: 1px solid #999;
   background-color: #eee;
-  overflow: hidden;
+  overflow: auto;
 }
 .sub, .main, .extra {
   background-color: white;
