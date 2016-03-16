@@ -56,7 +56,7 @@ body * {
   padding: 20px;
   border: 1px solid #999;
   background-color: #eee;
-  overflow: auto;
+  overflow: hidden;
   _zoom: 1;
 }
 .sub, .body, .extra {
