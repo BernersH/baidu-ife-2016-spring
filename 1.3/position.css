@@ -1,4 +1,5 @@
 /*样式初始化 from taobao 略有修改*/
+
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
   margin: 0;
   padding: 0;
@@ -45,7 +46,8 @@ table {
 }
 
 /* 我的样式 */
-.content{
+
+.content {
   width: auto;
   margin: 20px;
   padding: 20px;
@@ -53,46 +55,46 @@ table {
   background-color: #eee;
   position: relative;
 }
-.sub,.main,.extra{
+.sub, .main, .extra {
   background-color: white;
   border: 1px solid #999;
 }
-img{
+img {
   height: 80px;
   width: 80px;
   border: 1px solid #999;
 }
-.sub{
+.sub {
   position: absolute;
   left: 20px;
   width: 200px;
 }
-.sub img{
+.sub img {
   float: left;
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
 }
-.sub p{
+.sub p {
   margin-top: 20px;
   margin-left: 120px;
 }
-.main{
+.main {
   padding: 20px;
   margin-left: 240px;
   margin-right: 160px;
 }
-.extra{
+.extra {
   position: absolute;
-  top:20px;
+  top: 20px;
   right: 20px;
   width: 120px;
   position: absolute;
 }
-.extra img{
+.extra img {
   margin-left: 19px;
   margin-bottom: 20px;
 }
-.extra img:first-child{
+.extra img:first-child {
   margin-top: 20px;
 }
