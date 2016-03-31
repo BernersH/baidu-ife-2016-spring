@@ -21,16 +21,16 @@ function addAqiData() {
   var re1 = /[A-Za-z\u4e00-\u9fa5]+/;
   var re2 = /\d+/;
 
-  if(!re1.test(city)){
+  if (!re1.test(city)) {
     alert("城市名必须为中英文字符");
-    return ;
-  }else if(!re2.test(input)){
+    return;
+  } else if (!re2.test(input)) {
     alert("空气质量指数必须为正整数");
-    return ;
-  }else {
-        aqiData[city]= input;
-        cityInput.value = null;
-        valueInput.value = null;
+    return;
+  } else {
+    aqiData[city] = input;
+    cityInput.value = null;
+    valueInput.value = null;
   }
 
 }
@@ -40,10 +40,9 @@ function addAqiData() {
  */
 function renderAqiList() {
   var table = "<tr><td>城市</td><td>空气质量</td><td>操作</td></tr>";
-  for(var city in aqiData){
-       table += "<tr><td>"+city+"</td><td>"+aqiData[city]+"</td><td><button data-city='"+city+"'>删除</button></td></tr>";
+  for (city in aqiData) {
+    table += "<tr><td>" + city + "</td><td>" + aqiData[city] + "</td><td><button data-city='" + city + "'>删除</button></td></tr>";
   }
-
   document.getElementById("aqi-table").innerHTML = city ? table : "";
 }
 
@@ -73,9 +72,9 @@ function init() {
   // 在这下面给add-btn绑定一个点击事件，点击时触发addBtnHandle函数
   document.getElementById("add-btn").addEventListener("click", addBtnHandle);
   // 想办法给aqi-table中的所有删除按钮绑定事件，触发delBtnHandle函数
-  document.getElementById("aqi-table").addEventListener("click", function(event){
-   if(event.target.nodeName.toLowerCase() === 'button') delBtnHandle.call(null, event.target.dataset.city);
-})
+  document.getElementById("aqi-table").addEventListener("click", function(event) {
+    if (event.target.nodeName.toLowerCase() === 'button') delBtnHandle(event.target.dataset.city);
+  })
 }
 
 init();
