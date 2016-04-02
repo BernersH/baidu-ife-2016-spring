@@ -1,0 +1,93 @@
+/*样式初始化 from taobao 略有修改*/
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+body, button, input, select, textarea {
+  font: 12px/1.5tahoma, arial, \5b8b\4f53;
+}
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+code, kbd, pre, samp {
+  font-family: couriernew, courier, monospace;
+}
+small {
+  font-size: 12px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+legend {
+  color: #000;
+}
+fieldset, img {
+  border: 0;
+}
+button, input, select, textarea {
+  font-size: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*我的样式*/
+
+* {
+  padding: 20px;
+}
+.wrapper {
+  display: flex;
+  border: 1px solid #999;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+[class*="flex-"] {
+  box-sizing: border-box;
+  width: 150px;
+  border: 1px solid #f00;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.flex-4 {
+  border: 1px solid #0f0 !important;
+  height: 200px;
+  line-height: 158px;
+}
+.flex-1 {
+  height: 120px;
+  line-height: 78px;
+}
+.flex-2 {
+  height: 100px;
+  line-height: 58px;
+}
+.flex-3 {
+  height: 40px;
+  line-height: 0px;
+}
+@media (max-width:640px) {
+  .wrapper {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .flex-4 {
+    order: -1;
+  }
+}
