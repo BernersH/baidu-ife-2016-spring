@@ -44,7 +44,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-<<<<<<< HEAD
 /*我的样式*/
 
 .row::before, .row::after {
@@ -54,7 +53,7 @@ table {
    clear: both;
   }
   [class*="col-"] {
-    <<<<<<< HEAD box-sizing: border-box;
+     box-sizing: border-box;
     height: 50px;
     border: 1px solid #999;
     background-color: #eee;
