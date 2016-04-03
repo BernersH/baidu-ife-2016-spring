@@ -1,0 +1,140 @@
+/*样式初始化 from taobao 略有修改*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+body, button, input, select, textarea {
+  font: 12px/1.5tahoma, arial, \5b8b\4f53;
+}
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+code, kbd, pre, samp {
+  font-family: couriernew, courier, monospace;
+}
+small {
+  font-size: 12px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+legend {
+  color: #000;
+}
+fieldset, img {
+  border: 0;
+}
+button, input, select, textarea {
+  font-size: 100%;
+}
+/*table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}*/
+/*我的样式*/
+
+
+/*选择器部分*/
+ tr:nth-child(1) th{
+   background-color: black;
+   color: white;
+ }
+
+ tr:nth-child(2n+1){
+   background-color: grey;
+ }
+ tr:nth-child(2),tr:nth-child(3),tr:nth-child(4){
+   color: red;
+ }
+
+
+/*输入框变化部分*/
+form input{
+    margin-top: 50px;
+    height: 22px;
+    width: 100px;
+    transition: 0.5s width;
+    outline: none;
+}
+
+form input:focus{
+    width: 200px;
+}
+
+/*banner部分*/
+.banner{
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.banner-container{
+    width: 300%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    transition: 0.5s left;
+    font-size: 0;
+    word-spacing: 0;
+    letter-spacing: 0;
+}
+.banner-container li{
+    display: inline-block;
+    list-style: none;
+    width: 300px;
+    height: 100px;
+}
+.banner-container li:nth-child(1){
+    background-color: #00f;
+}
+.banner-container li:nth-child(2){
+    background-color: #0f0;
+}
+.banner-container li:nth-child(3){
+    background-color: #f00;
+}
+
+.banner-controller{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.banner-controller a{
+    text-decoration: none;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+    background-color: #fff;
+    opacity: 0.5;
+    text-align: center;
+    color: #cccccc;
+}
+.banner-controller a:visited{
+    color: #cccccc;
+}
+
+#img1:target~.banner-container{
+    left: 0
+}
+#img2:target~.banner-container{
+    left: -100%;
+}
+#img3:target~.banner-container{
+    left: -200%;
+}
