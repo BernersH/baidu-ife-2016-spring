@@ -169,7 +169,7 @@ function initAqiChartData() {
                     total += aqiSourceData[city][e];
                 }
             }
-            chartData["week"+week]=Math.round(total/count);
+            chartData["周"+week]=Math.round(total/count);
             break;
         case "month":
             chartData = {};
