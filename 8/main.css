@@ -46,7 +46,6 @@ table {
 }
 /*我的样式*/
 
-.row::before, .row::after {
    .row::before, .row::after {
    content: "";
    display: table;
